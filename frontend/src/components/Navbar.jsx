@@ -24,21 +24,21 @@ const Navbar = () => {
                         <div className="ml-10 flex items-center space-x-6">
                             <Link
                                 to="/"
-                                className="text-gray-300 hover:bg-gray-700/40 px-4 py-2 rounded-xl transition-all duration-200 font-medium flex items-center gap-2 group"
+                                className="text-gray-300 hover:bg-gray-700/40 px-4 py-2 rounded-xl transition-all duration-200 font-medium flex items-center gap-2 group cursor-pointer"
                             >
                                 <span className="bg-gradient-to-r from-blue-400 to-green-400 h-0.5 w-0 group-hover:w-4 transition-all duration-300"></span>
                                 Home
                             </Link>
                             <Link
                                 to="/about"
-                                className="text-gray-300 hover:bg-gray-700/40 px-4 py-2 rounded-xl transition-all duration-200 font-medium flex items-center gap-2 group"
+                                className="text-gray-300 hover:bg-gray-700/40 px-4 py-2 rounded-xl transition-all duration-200 font-medium flex items-center gap-2 group cursor-pointer"
                             >
                                 <span className="bg-gradient-to-r from-blue-400 to-green-400 h-0.5 w-0 group-hover:w-4 transition-all duration-300"></span>
                                 About
                             </Link>
                             <Link
                                 to="/contact"
-                                className="text-gray-300 hover:bg-gray-700/40 px-4 py-2 rounded-xl transition-all duration-200 font-medium flex items-center gap-2 group"
+                                className="text-gray-300 hover:bg-gray-700/40 px-4 py-2 rounded-xl transition-all duration-200 font-medium flex items-center gap-2 group cursor-pointer"
                             >
                                 <span className="bg-gradient-to-r from-blue-400 to-green-400 h-0.5 w-0 group-hover:w-4 transition-all duration-300"></span>
                                 Contact
@@ -85,21 +85,21 @@ const Navbar = () => {
                     <Link
                         to="/"
                         onClick={toggleMenu}
-                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium"
+                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium cursor-pointer"
                     >
                         Home
                     </Link>
                     <Link
                         to="/about"
                         onClick={toggleMenu}
-                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium"
+                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium cursor-pointer"
                     >
                         About
                     </Link>
                     <Link
                         to="/contact"
                         onClick={toggleMenu}
-                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium"
+                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium cursor-"
                     >
                         Contact
                     </Link>

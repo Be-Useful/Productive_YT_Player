@@ -93,7 +93,7 @@ ${transcriptText}`;
       <button
         onClick={handleChatGPTSummary}
         disabled={isLoading}
-        className={`w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-semibold shadow-lg transition-all
+        className={`w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-semibold shadow-lg transition-all cursor-pointer
           ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:from-purple-500 hover:to-blue-400 hover:scale-[1.02]'}`}
       >
         {isLoading ? '⏳ Generating Transcript...' : '📑 Generate Smart Summary'}
@@ -115,13 +115,13 @@ ${transcriptText}`;
             <div className="flex justify-center gap-4">
               <button
                 onClick={handleProceed}
-                className="py-2 px-6 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-semibold hover:from-purple-500 hover:to-blue-400 transition-all"
+                className="py-2 px-6 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-semibold hover:from-purple-500 hover:to-blue-400 transition-all cursor-pointer"
               >
                 Proceed
               </button>
               <button
                 onClick={() => setShowPopup(false)}
-                className="py-2 px-6 bg-gray-300 text-gray-800 rounded-lg font-semibold hover:bg-gray-400 transition-all"
+                className="py-2 px-6 bg-gray-300 text-gray-800 rounded-lg font-semibold hover:bg-gray-400 transition-all cursor-pointer"
               >
                 Cancel
               </button>
