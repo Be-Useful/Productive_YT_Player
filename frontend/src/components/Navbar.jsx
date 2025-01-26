@@ -14,7 +14,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0">
                         <Link to="/" className="flex items-center">
                             <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-                                VideoMind
+                                ProdYT-Player
                             </span>
                         </Link>
                     </div>
@@ -37,11 +37,11 @@ const Navbar = () => {
                                 About
                             </Link>
                             <Link
-                                to="/contact"
+                                to="/how-to-use"
                                 className="text-gray-300 hover:bg-gray-700/40 px-4 py-2 rounded-xl transition-all duration-200 font-medium flex items-center gap-2 group cursor-pointer"
                             >
                                 <span className="bg-gradient-to-r from-blue-400 to-green-400 h-0.5 w-0 group-hover:w-4 transition-all duration-300"></span>
-                                Contact
+                                How to Use
                             </Link>
                         </div>
                     </div>
@@ -97,11 +97,11 @@ const Navbar = () => {
                         About
                     </Link>
                     <Link
-                        to="/contact"
+                        to="/how-to-use"
                         onClick={toggleMenu}
-                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium cursor-"
+                        className="block text-gray-300 hover:bg-gray-700/40 px-4 py-3 rounded-xl transition duration-200 font-medium cursor-pointer"
                     >
-                        Contact
+                        How to Use
                     </Link>
                 </div>
             </div>

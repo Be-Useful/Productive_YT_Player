@@ -2,6 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import TranscriptFetcher from './TranscriptFetcher';
+import About from './components/About';
+import HowToUse from './components/HowtoUse';
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
                   </div>
                 } 
               />
+              <Route path="/about" element={<About />} />
+              <Route path="/how-to-use" element={<HowToUse />} />
             </Routes>
           </div>
         </div>

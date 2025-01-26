@@ -96,7 +96,7 @@ ${transcriptText}`;
         className={`w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-semibold shadow-lg transition-all cursor-pointer
           ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:from-purple-500 hover:to-blue-400 hover:scale-[1.02]'}`}
       >
-        {isLoading ? '⏳ Generating Transcript...' : '📑 Generate Smart Summary'}
+        {isLoading ? '⏳ Generating Transcript...' : '📑 Generate ChatGPT Summary'}
       </button>
 
       {error && (
