@@ -1,18 +1,9 @@
 from flask import Flask, jsonify, request
 from youtube_transcript_api import YouTubeTranscriptApi
-from flask_cors import CORS
+from flask_cors import CORS  # Import CORS
 
 app = Flask(__name__)
-
-# Configure CORS properly for production
-CORS(app, resources={
-    r"/transcript": {
-        "origins": [
-            "http://localhost:3000",  # Local development
-            "https://your-frontend-domain.vercel.app"  # Production frontend
-        ]
-    }
-})
+CORS(app)  # Enable CORS for all routes
 
 @app.route('/transcript', methods=['GET'])
 def get_transcript():
@@ -27,4 +18,4 @@ def get_transcript():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)  # Required for Render
+    app.run(debug=True)
