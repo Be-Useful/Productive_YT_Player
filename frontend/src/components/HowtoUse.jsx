@@ -81,7 +81,7 @@ const HowToUse = () => {
                     </h2>
                     <a 
                         href="/" 
-                        className="inline-block bg-gradient-to-r from-blue-400 to-green-400 text-gray-900 px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+                        className="inline-block bg-gradient-to-r from-blue-400 to-green-300 text-gray-900 px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
                     >
                         Start Now →
                     </a>
