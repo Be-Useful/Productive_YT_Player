@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 from youtube_transcript_api import YouTubeTranscriptApi
 from flask_cors import CORS  # Import CORS
+import os  # Import os to handle environment variables
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -18,4 +19,5 @@ def get_transcript():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Fetch the PORT environment variable
+    app.run(host='0.0.0.0', port=port, debug=True)  # Use the fetched port
